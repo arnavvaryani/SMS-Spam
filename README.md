@@ -1,25 +1,48 @@
-# SMS Spam Detector
+# SMS Spam Detection
 
-* Developed a Machine Learning Model Using Naive Bayes Classifier which classifies a text message into two categories i.e Spam or Ham(Not Spam).
+## Introduction
+This project is a web-based application for detecting SMS spam. It utilizes machine learning algorithms to classify SMS messages as either 'spam' or 'ham' (not spam). The application is built using Python's Flask framework and uses pre-trained models for the classification task.
 
-* The Final Model has also been deployed on the web with HTML and CSS through Heroku and Github.
+## Features
+- Web interface for real-time SMS spam detection.
+- Utilizes a pre-trained machine learning model for accurate classification.
+- Simple and user-friendly UI.
 
-* The link to visit the website where the model has been deployed is :- https://smsspam-detection.herokuapp.com/
+## Prerequisites
+- Python 3.x
+- Flask
+- Joblib
+- NLTK
 
-* When you Visit the website you will be directed to the home page, where you will be asked to enter a text Message and then click the predict Button. When you click the predict button you will be directed at a predict page wherein the results of your message will be displayed.
+## Installation
 
-* Examples of Spam Detection is as follows :-
+### Clone the Repository
+```
+git clone [repository-url]
+cd SMS-Spam-Detection
+```
+Replace `[repository-url]` with the URL of your Git repository.
 
-![Image of a Spam Message](https://github.com/simran-03/smsspam/blob/main/images/Screenshot%20(313).png)
+### Setting Up the Environment
+It is recommended to use a virtual environment:
+```
+python -m venv venv
+source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+```
 
-The result of this above Image is :-
+### Install Required Packages
+Install the necessary Python packages:
+```
+pip install -r requirements.txt
+```
 
-![Image of a Spam Message](https://github.com/simran-03/smsspam/blob/main/images/Screenshot%20(312).png)
+### Run the Application
+```
+export FLASK_APP=app.py  # On Windows use `set FLASK_APP=app.py`
+flask run
+```
+Access the web application at `http://127.0.0.1:5000/` in your browser.
 
-* Examples of Ham Detection is as follows :-
-
-![Image of a Spam Message](https://github.com/simran-03/smsspam/blob/main/images/Screenshot%20(314).png)
-
-The result of this above Image is :-
-
-![Image of a Spam Message](https://github.com/simran-03/smsspam/blob/main/images/Screenshot%20(316).png)
+## Usage
+- Enter an SMS message into the provided text field on the web interface.
+- Submit the message to see if it is classified as 'spam' or 'ham'.
